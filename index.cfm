@@ -3,7 +3,6 @@
 <cfparam name="form.lastName" default="" />
 <cfparam name="form.email" default="" /> 
 <cfparam name="form.message" default="" /> 
-
 <cfset validation = false />
 <cfset first = 'display: none;' />
 <cfset last = 'display: none;' />
