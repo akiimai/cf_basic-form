@@ -1,5 +1,3 @@
-<!--- <cfdump var="#session#"> --->
-
 <cfinclude template="header.cfm">
             <div style="font-family: 'Open Sans', sans-serif; background-color: #F5F5F5; text-align: center" class="col-4 pt-3 pb-5">
                 <h1 class="pb-2" style="font-family: 'Shadows Into Light'; font-size: 4rem ">Thank you!</h1>
