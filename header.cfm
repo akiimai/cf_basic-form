@@ -14,7 +14,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light" rel="stylesheet">
 
-    <title>CF Code Challenge</title>
+    <title>CF Basic Form</title>
 </head>
 
 <body style="height: 100%">

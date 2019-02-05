@@ -1,4 +1,4 @@
-<cfapplication name="cf-challenge" sessionmanagement="true">
+<cfapplication name="cf-form" sessionmanagement="true">
 
 <cfparam name="session.firstName" default="">  
 <cfparam name="session.lastName" default=""> 
