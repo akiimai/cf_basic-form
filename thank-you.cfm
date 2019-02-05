@@ -1,46 +1,29 @@
-<!DOCTYPE html>
-<html>
+<!--- <cfdump var="#session#"> --->
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light" rel="stylesheet">
-
-    <title>CF Code Challenge</title>
-</head>
-
-<body>
-    <div class="container-fluid" style="position: absolute; top: 10%">
-        <div class="row justify-content-center">
-            <div style="font-family: 'Open Sans', sans-serif;" class="col-4">
+<cfinclude template="header.cfm">
+            <div style="font-family: 'Open Sans', sans-serif; background-color: #F5F5F5; text-align: center" class="col-4 pt-3 pb-5">
                 <h1 class="pb-2" style="font-family: 'Shadows Into Light'; font-size: 4rem ">Thank you!</h1>
-                <h3 >Your Info:</h3>
+                <h3 class="pb-3">Your Info:</h3>
 
                 <cfoutput>
-                <div>
-                    <p>First Name:  #firstName#</p>
-                    <p>Last Name:  #lastName#</p>
-                    <p>Email Address: #email#</p>
+                <div style="text-align: left; padding: 0 4rem 2rem;">
+                    <p><strong>First Name: </strong> #session.firstName#</p>
+                    <p><strong>Last Name: </strong> #session.lastName#</p>
+                    <p><strong>Email Address: </strong> #session.email#</p>
 
-                    <cfif trim(message) eq ''>
-                        <p>Message: <span style="color: red">None<span></p>   
+                    <cfif trim(session.message) eq ''>
+                        <p><strong>Message: </strong><span style="color: ##E80000">None<span></p>   
                     <cfelse>
-                        <p>Message: #message#</p>   
-                    </cfif>              
+                        <p><strong>Message: </strong>#session.message#</p>   
+                    </cfif>               
                 </div>
                 </cfoutput>
-                    <a href="index.cfm" class="btn btn-info" role="button">Back to Guestbook</a>
+                <a href="index.cfm" class="btn btn-info" role="button">Back to Guestbook</a>
             </div>
-        </div>
-    </div>
+        </div> 
+        <!--- row --->
+    </div> 
+    <!--- container ---> 
 </body>
 
 </html>
